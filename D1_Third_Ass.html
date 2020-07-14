@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> 
+            D1_Third_Assignment
+        </title>
+    </head>
+
+    <body>
+        <p id="Demo">
+            <button type="button" onclick="dateFormat()">Get Formatted Date !
+            </button> 
+        </p>
+        
+       
+        <script>
+            function dateFormat()
+            {
+                var current_date=new Date();
+                var formatted_date=current_date.getDate()+"-"+(current_date.getMonth()+1)+"-"+current_date.getFullYear();
+                document.getElementById("Demo").innerHTML=formatted_date;
+               
+                // OUTPUT :
+                // 14-7-2020
+            }
+         
+        </script>
+    </body>    
+</html>
+
+
+
