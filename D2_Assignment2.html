@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <!-- String and Array Methods -->
+        <title>
+           Asignment 2
+        </title>
+    </head>
+
+    <body>
+        <script>
+
+            // String Methods
+            let str=" Vaishnavi "
+            let str2="Bidaye"
+            
+            console.log("STRING OPERATIONS : ")
+            //Length
+            console.log("Length is : "+str.length)
+            
+            //Uppercase
+            console.log("UpperCase :"+str.toUpperCase())
+            
+            //Lowercase
+            console.log("UpperCase :"+str.toLowerCase())
+            
+            //Trim whitespaces
+            console.log("Trim      :"+str.trim())
+            
+            //Char at 4th position
+            console.log("CharAt    :"+str.charAt(4))
+            
+            //concatenation
+            console.log("Concat    :"+str.concat(str2))
+
+            //IndexOf
+            console.log("IndexOf   :"+str.indexOf('a'))
+
+            //Replace first occured char
+            console.log("Replace   :"+str.replace('i','ee'))
+
+            //Split
+            console.log("Split     :"+str.split('i'))
+
+            //Substring
+            console.log("Substring :"+str.substring(1,6))
+
+
+               
+            let arr=[11,22,[true,false],1234n,567890n,'Jui','Nihar','Jui']
+            let arr2=[44,'shreya']
+            
+            console.log("\nARRAY OPERATIONS : ")
+            //IndexOf
+            console.log("IndexOf       :"+arr.indexOf(22))
+            
+            //Last Index Of
+            console.log("LastIndexOf   :"+arr.lastIndexOf('Jui'))
+            
+            //Length
+            console.log("Length        :"+arr.length)
+
+            //sort
+            console.log("Sort          :"+arr.sort())
+
+            //Reverse Array
+            revarr=arr;
+            revarr=revarr.reverse()
+            console.log("Reverse Array :"+revarr)
+
+            //Concat
+            console.log("Concat        :"+arr.concat(arr2))
+
+            //Unshift 'Shrikant' (Push at start)
+            arr.unshift('Shrikant')
+            console.log("Unshift       :"+arr)
+            
+            //Shift (Pop from end)
+            arr.shift()
+            console.log("Shift         :"+arr)
+            
+            //Push 'Vaish'
+            arr.push('Vaish')
+            console.log("Push          :"+arr)
+            
+            //Pop 
+            arr.pop()
+            console.log("Pop           :"+arr)
+
+
+
+        </script>
+
+    </body>
+</html>
