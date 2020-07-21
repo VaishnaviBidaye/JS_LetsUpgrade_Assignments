@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <!-- Higher Order Function -->
+        <title>
+            D5 Assignment 1
+        </title>
+    </head>
+    <body>
+        <script>
+            var arr=[];
+            do{
+                var num=prompt("Enter a Positive Number : ");
+                num= +num;
+                if(num>0)
+                    arr.push(num);
+                var nextNum=confirm("Do you want to add more number in Array");
+            }while(nextNum==true)
+
+            let oddNum=arr.filter((num)=>{              // Filter
+                if(num%2==1)
+                    return num;
+            }).map((num)=>{                             // Map
+                return num**3;
+            })
+            console.log(oddNum);
+
+
+
+
+        </script>
+
+    </body>
+</html>
