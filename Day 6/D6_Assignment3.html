@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <!-- Welcome message with Dark Mode Button -->
+        <title>
+            D6 Assignment 3
+        </title>
+        <style>
+            .highlight{
+                background-color:black;
+                color:white;
+            }
+        </style>
+    </head>
+    <body id="backcolor">
+        <h1 id="name"></h1>
+        <h3 id="clock"></h3>
+        <button id="darkMode">Dark Mode</button>
+        <script>
+            
+            let name=document.getElementById('name');           // welcome message
+            let userName=prompt("Enter Your Name - ");
+            name.innerText=(`Welcome ${userName} !!!`);
+
+            let cclock=document.getElementById('clock');        // time display
+            function clock(){
+                let date=new Date();
+                let time=date.toLocaleTimeString();
+                cclock.innerText=time;
+            }
+            setInterval(clock,1000);
+
+            let darkMode=document.getElementById('darkMode');   // Darkmode
+            darkMode.onclick=()=>{
+                backcolor.classList.toggle('highlight');
+                if(darkMode.name=='Dark Mode')
+                    darkMode.name='Simple Mode';
+                else
+                    darkMode.name='Dark Mode';    
+            };
+
+        </script>
+
+    </body>
+</html>

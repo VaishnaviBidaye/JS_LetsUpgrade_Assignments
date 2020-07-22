@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <!-- BackgroundColor change -->
+        <title>
+            D6 Assignment 1
+        </title>
+    </head>
+    <body id="bgcolor">
+        <script>
+            
+            let bgcolor=document.getElementById('bgcolor');
+            arrColor=new Array('red','orange','yellow','green','blue','violet');
+            var num=0;
+            
+            function change()
+            {
+                bgcolor.style.backgroundColor=arrColor[num];
+                num=(num+1)%arrColor.length;   
+            }
+
+            setInterval(change,5000);  
+            
+        </script>
+
+    </body>
+</html>
